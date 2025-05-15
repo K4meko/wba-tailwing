@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@theme {
+  --color-main: rgba(116, 198, 157, 1);
+  --default-font-family: "Work Sans";
+}
+.crimson-text {
+  font-family: "Crimson Text";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+}
+.font-welcome {
+  @apply text-white;
+  font-family: "Work Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 125%;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+}
+html {
+  font-family: "Work Sans";
+}
