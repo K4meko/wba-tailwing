@@ -1,131 +1,179 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="output.css" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="bg-main h-[642px] flex flex-col w-full items-center sm:h-[586px]">
-      <div class="flex flex-row items-center justify-between w-full px-5 py-8 sm:px-28 sm:mb-7">
-        <div class="flex items-center">
-          <img src="./images/start_img.svg" alt="Start logo" class="w-auto h-8">
-          <h1 class="text-white text-4xl md:text-5xl font-welcome font-bold ml-4 [font-feature-settings:'liga'_off,'clig'_off]">
-            Start
-          </h1>
+    <header class="bg-primary text-white">
+      <nav class="font-sans p-5 sm:px-8 md:px-12 lg:px-24 flex justify-between">
+        <div class="flex flex-row">
+          <svg
+            class="w-11 h-auto"
+            viewBox="0 0 70 50"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M39.7719 12.3454C40.9881 11.1262 41.7406 9.44383 41.7406 7.5851C41.7406 3.86264 38.7226 0.844696 35.0001 0.844696C32.6467 0.844696 30.5777 2.05287 29.372 3.88062C29.0517 4.2014 2.21949 37.2729 1.96866 37.6531C0.752489 38.8723 0 40.5551 0 42.4129C0 46.1358 3.01794 49.1538 6.7404 49.1538C9.0938 49.1538 11.1629 47.9461 12.3686 46.1178C12.6889 45.7971 39.5211 12.7251 39.7719 12.3454Z"
+              fill="white"
+            />
+            <path
+              d="M55.2974 28.0393C56.5171 26.8192 57.271 25.1348 57.271 23.2736C57.271 19.5511 54.2531 16.5332 50.5306 16.5332C48.1762 16.5332 46.1061 17.7423 44.9005 19.5716C44.5777 19.8949 30.4848 37.2665 30.2325 37.6493C29.0128 38.8695 28.2588 40.5538 28.2588 42.4145C28.2588 46.1375 31.2767 49.1555 34.9992 49.1555C37.3536 49.1555 39.4237 47.9463 40.6289 46.117C40.9517 45.7942 55.0451 28.4221 55.2974 28.0393Z"
+              fill="white"
+            />
+            <path
+              d="M70.0001 7.5851C70.0001 11.3081 66.9822 14.3255 63.2597 14.3255C59.5368 14.3255 56.5193 11.3081 56.5193 7.5851C56.5193 3.86264 59.5368 0.844696 63.2597 0.844696C66.9822 0.844696 70.0001 3.86264 70.0001 7.5851Z"
+              fill="white"
+            />
+            <path
+              d="M13.4808 7.5851C13.4808 11.3081 10.4629 14.3255 6.7404 14.3255C3.01794 14.3255 0 11.3081 0 7.5851C0 3.86264 3.01794 0.844696 6.7404 0.844696C10.4629 0.844696 13.4808 3.86264 13.4808 7.5851Z"
+              fill="white"
+            />
+          </svg>
+          <button class="text-4xl font-normal ml-2">Start</button>
         </div>
-        <!-- Menu icon for mobile -->
-        <img src="./images/list.svg" alt="Menu" class="w-6 h-6 cursor-pointer md:hidden">
-        <!-- Navigation links for larger screens -->
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="#" class="text-white hover:text-gray-300 transition-colors">Home</a>
-          <a href="#" class="text-white hover:text-gray-300 transition-colors">Portfolio</a>
-          <a href="#" class="text-white hover:text-gray-300 transition-colors">Services</a>
-          <a href="#" class="text-white hover:text-gray-300 transition-colors">Contact</a>
-        </nav>
-      </div>
-      <div class="flex flex-col-reverse px-5 p-3 w-full gap-5 sm:flex-row sm:justify-start sm:items-start sm:px-28">
-        <div class="flex flex-col gap-5 sm:gap-10 sm:w-[50%]">
-          <p class="font-welcome text-white text-center w-full sm:text-left">WELCOME</p>
-          <p class="crimson-text text-white text-center w-full sm:text-left">
+        <svg
+          class="sm:hidden w-9 h-auto"
+          viewBox="0 0 35 36"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M5.46875 26.75C5.46875 26.4599 5.58398 26.1817 5.7891 25.9766C5.99422 25.7715 6.27242 25.6562 6.5625 25.6562H28.4375C28.7276 25.6562 29.0058 25.7715 29.2109 25.9766C29.416 26.1817 29.5312 26.4599 29.5312 26.75C29.5312 27.0401 29.416 27.3183 29.2109 27.5234C29.0058 27.7285 28.7276 27.8438 28.4375 27.8438H6.5625C6.27242 27.8438 5.99422 27.7285 5.7891 27.5234C5.58398 27.3183 5.46875 27.0401 5.46875 26.75ZM5.46875 18C5.46875 17.7099 5.58398 17.4317 5.7891 17.2266C5.99422 17.0215 6.27242 16.9062 6.5625 16.9062H28.4375C28.7276 16.9062 29.0058 17.0215 29.2109 17.2266C29.416 17.4317 29.5312 17.7099 29.5312 18C29.5312 18.2901 29.416 18.5683 29.2109 18.7734C29.0058 18.9785 28.7276 19.0938 28.4375 19.0938H6.5625C6.27242 19.0938 5.99422 18.9785 5.7891 18.7734C5.58398 18.5683 5.46875 18.2901 5.46875 18ZM5.46875 9.25C5.46875 8.95992 5.58398 8.68172 5.7891 8.4766C5.99422 8.27148 6.27242 8.15625 6.5625 8.15625H28.4375C28.7276 8.15625 29.0058 8.27148 29.2109 8.4766C29.416 8.68172 29.5312 8.95992 29.5312 9.25C29.5312 9.54008 29.416 9.81828 29.2109 10.0234C29.0058 10.2285 28.7276 10.3438 28.4375 10.3438H6.5625C6.27242 10.3438 5.99422 10.2285 5.7891 10.0234C5.58398 9.81828 5.46875 9.54008 5.46875 9.25Z"
+            fill="white"
+          />
+        </svg>
+        <div class="sm:flex gap-4 hidden">
+          <button>Home</button><button>Portfolio</button
+          ><button>Services</button><button>Contact</button>
+        </div>
+      </nav>
+      <div class="m-5 sm:flex-row-reverse flex flex-col justify-center">
+        <img
+          class="max-w-lgflex w-full justify-center"
+          src="./Images/Lightbulb.svg"
+        />
+        <div class="flex flex-col">
+          <h6 class="font-bold mt-8 tracking-[.35rem] uppercase">Welcome</h6>
+          <h5 class="font-crimson font-bold text-3xl my-4">
             Lorem ipsum dolor sit amet consectetur
-          </p>
-          <p class="text-white text-center sm:text-left">
+          </h5>
+          <p class="text-white/75 font-sans">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
             nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
             voluptate culpa nesciunt delectus iste?
           </p>
-          <button class="bg-white w-40 rounded-md h-12 text-black text-xl mx-auto sm:mx-0">
+          <button
+            class="bg-white text-black text-xl p-3.5 rounded-md mt-5 mb-10 w-1/2 text-center"
+          >
             Explore
           </button>
         </div>
-        <img src="./image.svg" class="p-5 w-full sm:w-[600px] sm:h-auto" />
       </div>
-    </div>
-    <div class="p-5 space-y-6">
-      <p class=" text-main font-welcome text-center">
-        PARTNERS
-      </p>
-      <p class="crimson-text text-center font-[700px]"> Lorem Ipsum Dolor</p>
-      <p class="leading-tight text-center text-[20px]">Lorem ipsum, dolor sit amet consectetur 
-
-        <br></br>adipisicing elit.
-    
-       
-    </div>
-<div class="flex flex-col items-center justify-center">
-<div class="flex items-center flex-col justify-center my-2 px-22 md:flex-row gap-10">
-    <img src="./images/google.svg" class="w-[200px] h-[60px] md:w-[150px] md:h-[45px]" />
-    <img src="./images/microsoft.svg" class="w-[200px] h-[60px] md:w-[150px] md:h-[45px]" />
-    <img src="./images/airbnb.svg" class="w-[200px] h-[64px] md:w-[150px] md:h-[48px]" />
-    <img src="./images/facebook.svg" class="w-[200px] h-[60px] md:w-[150px] md:h-[45px]" />
-    <img src="./images/spotify.svg" class="w-[200px] h-[60px] md:w-[150px] md:h-[45px]" />
-  </div>
-  <button class="bg-[#212529] text-white w-[185px] h-[48px] flex-shrink-0 rounded-[5px] hover:opacity-90 transition-opacity mt-10">
-    Learn More
-  </button>
-</div>
-<div class="p-5 flex flex-col justify-center items-start text-left sm:flex-row sm:gap-44 sm:m-10 sm:px-10 sm:justify-center">
-  <img src="./Images/generic_image2.svg" class="mb-7 size-full" />
-  <div class="gap-5 flex flex-col items-start w-full"> <!-- Changed items-center to items-start -->
-    <h5 class="crimson-text text-9xl font-bold text-left sm:w-1/2"> <!-- Added text-left -->
-      Lorem ipsum dolor sit amet consectetur
-    </h5>
-    <p class="w-4/5 text-[rgb(33,37,41,0.5)] text-left"> <!-- Changed text-center to text-left -->
-      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-      nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
-      voluptate culpa nesciunt delectus iste?
-    </p>
-      <button class="bg-[#212529] text-white w-[185px] h-[48px] flex-shrink-0 rounded-[5px] hover:opacity-90 transition-opacity mt-10">
-    Learn More
-  </button>
-  </div>
-</div>
-    <div class="p-5 flex flex-col justify-center sm:items-center sm:flex-row-reverse sm:align-middle sm:px-28">
-      <img src="./Images/notebook.svg" class="mb-7 size-full" />
-      <div class="gap-5 flex flex-col items-start sm:align-middle">
-        <h5 class="crimson-text text-9xl text-start font-bold">
-          Lorem ipsum dolor sit amet consectetur
+    </header>
+    <section class="flex flex-col justify-center">
+      <div>
+        <h6
+          class="font-sans font-bold text-primary text-center tracking-[.35rem] uppercase"
+        >
+          Partners
+        </h6>
+        <h5 class="font-crimson text-2xl font-bold m-4 text-center">
+          Lorem Ipsum Dolor
         </h5>
-      <p class="w-4/5 text-[rgb(33,37,41,0.5)]">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
-          nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
-          voluptate culpa nesciunt delectus iste?
+        <p class="font-sans text-xl font-light text-center">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
         </p>
+      </div>
+      <div class="m-10 gap-6 flex flex-col justify-center">
+        <img src="./Images/Google.svg" class="h-12 w-auto" /><img
+          src="./Images/Microsoft.svg"
+          class="h-12 w-auto"
+        /><img src="./Images/Airbnb.svg" class="h-12 w-auto" /><img
+          src="./Images/Facebook.svg"
+          class="h-12 w-auto"
+        /><img src="./Images/Spotify.svg" class="h-12 w-auto" />
+      </div>
+      <div class="flex justify-center">
         <button
-          class="bg-[#212529] w-40 rounded-md h-12 text-white font-sans text-xl font-light mb-5 text-center"
+          class="bg-secondary w-40 rounded-md h-12 text-white font-sans text-xl font-light mb-8 text-center"
         >
           Learn more
         </button>
       </div>
-    </div>
+      <div class="p-5 flex flex-col justify-center">
+        <img src="./Images/People.svg" class="mb-7" />
+        <div class="gap-5 flex flex-col">
+          <h5 class="font-crimson text-2xl font-bold">
+            Lorem ipsum dolor sit amet consectetur
+          </h5>
+          <p class="text-secondary/50">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
+            voluptate culpa nesciunt delectus iste?
+          </p>
+          <button
+            class="bg-secondary w-40 rounded-md h-12 text-white font-sans text-xl font-light mb-14 text-center"
+          >
+            Learn more
+          </button>
+        </div>
+      </div>
+      <div class="p-5 flex flex-col justify-center">
+        <img src="./Images/Files.svg" class="mb-7" />
+        <div class="gap-5 flex flex-col">
+          <h5 class="font-crimson text-2xl font-bold">
+            Lorem ipsum dolor sit amet consectetur
+          </h5>
+          <p class="text-secondary/50">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Suscipit
+            nemo hic quos, ab, dolor aperiam nobis cum est eos error ipsum,
+            voluptate culpa nesciunt delectus iste?
+          </p>
+          <button
+            class="bg-secondary w-40 rounded-md h-12 text-white font-sans text-xl font-light mb-5 text-center"
+          >
+            Learn more
+          </button>
+        </div>
+      </div>
     </section>
     <section>
       <div class="flex flex-col">
         <div>
           <h6
-            class="font-sans font-bold text-main text-center tracking-[.35rem] uppercase"
+            class="font-sans font-bold text-primary text-center tracking-[.35rem] uppercase"
           >
             Team
           </h6>
-          <h5 class="font-crimson font-bold m-4 text-center crimson-text text-9xl">
+          <h5 class="font-crimson text-2xl font-bold m-4 text-center">
             Our Talents
           </h5>
           <p class="font-sans text-xl font-light text-center">
-           Lorem ipsum, dolor sit amet consectetur 
-
-
-Suscipit nemo hic quos, ab,
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
         <div
           class="sm:grid-cols-2 lg:grid-cols-4 gap-8 grid grid-cols-1 justify-items-center"
         >
           <div
-            class="w-64 shadow-xl rounded-lg py-6 flex h-auto flex-col justify-center mt-5"
+            class="w-64 shadow-xl rounded-lg py-6 flex h-auto flex-col justify-center"
           >
-            <img src="./Images/peg.svg" class="mx-10 mt-8" />
+            <img src="./Images/Peg.svg" class="mx-10 mt-2" />
             <h5 class="mx-10 my-4 font-crimson text-2xl font-bold">
               Peg Legge
             </h5>
@@ -134,7 +182,7 @@ Suscipit nemo hic quos, ab,
           <div
             class="w-64 shadow-xl rounded-lg py-6 flex h-auto flex-col justify-center"
           >
-            <img src="./Images/rich.svg" class="mx-10 mt-2" />
+            <img src="./Images/Richard.svg" class="mx-10 mt-2" />
             <h5 class="mx-10 my-4 font-crimson text-2xl font-bold">
               Richard Guerra
             </h5>
@@ -143,7 +191,7 @@ Suscipit nemo hic quos, ab,
           <div
             class="w-64 shadow-xl rounded-lg py-6 flex h-auto flex-col justify-center"
           >
-            <img src="./Images/alexandra.svg" class="mx-10 mt-2" />
+            <img src="./Images/Alexandra.svg" class="mx-10 mt-2" />
             <h5 class="mx-10 my-4 font-crimson text-2xl font-bold">
               Alexandra Stolz
             </h5>
@@ -152,7 +200,7 @@ Suscipit nemo hic quos, ab,
           <div
             class="w-64 shadow-xl rounded-lg py-6 flex h-auto flex-col justify-center"
           >
-            <img src="./Images/janet.svg" class="mx-10 mt-2" />
+            <img src="./Images/Janet.svg" class="mx-10 mt-2" />
             <h5 class="mx-10 my-4 font-crimson text-2xl font-bold">
               Janet Bray
             </h5>
@@ -168,7 +216,7 @@ Suscipit nemo hic quos, ab,
         </div>
       </div>
     </section>
-    <footer class="bg-main text-white">
+    <footer class="bg-primary text-white">
       <div class="flex flex-col justify-center">
         <div class="flex flex-row justify-center p-8 gap-4">
           <svg
